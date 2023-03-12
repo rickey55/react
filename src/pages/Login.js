@@ -1,26 +1,17 @@
-import logo from '../logo.svg';
 import '../App.css';
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Img from "../assets/result.svg"
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import "../css/login.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function Login() {
-  const [useremail, setUseremail] = useState("");
   const [username, setUsername] = useState("sa");
   const [password, setPassword] = useState("sa");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const renderErrorMessage = () =>
-  (
-    <div className="error">{errorMessages.message}</div>
-  );
+   const [isSubmitted, setIsSubmitted] = useState(false);
+   
   const database = [
     {
       username: "sa",
@@ -31,11 +22,7 @@ function Login() {
       password: "1"
     }
   ];
-
-  const errors = {
-    username: "invalid username",
-    password: "invalid password"
-  };
+ 
 
   const handleLogin = (e) => {
     //Prevent page reload
@@ -49,14 +36,10 @@ function Login() {
       navigate('/Home')
     } else {
       // not found
-      setErrorMessages({ name: "username", message: errors.username });
       setIsSubmitted(false);
     }
   };
-
-  const handleAccount = (e) => {
-    setUseremail(e.target.value);
-  };
+ 
   const handleUsername = (e) => {
     setUsername(e.target.value);
   };
@@ -82,7 +65,7 @@ function Login() {
             <Form className="login-form">
               <div className="form-group">
                 <label form="email">Account</label>
-                <Field value={username} onChange={handleAccount} className="form-field" placeholder="Account" />
+                <Field value={username} onChange={handleUsername} className="form-field" placeholder="Account" />
 
                 <ErrorMessage
                   component="span"
