@@ -5,11 +5,11 @@ import React from 'react';
 
 
 const Home = () => {
-  const [contentVisible, setContentVisible] = React.useState({
-    isAllContentVisibleChart: true,
-    isAllContentVisibleDeposits: true,
-    isAllContentVisibleOrders: true
-  });
+//   const [contentVisible, setContentVisible] = React.useState({
+//     isAllContentVisibleChart: true,
+//     isAllContentVisibleDeposits: true,
+//     isAllContentVisibleOrders: true
+//   });
 
 
   return (
