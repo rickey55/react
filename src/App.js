@@ -15,7 +15,6 @@ function App() {
       {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
     </BrowserRouter>
