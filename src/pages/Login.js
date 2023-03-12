@@ -33,7 +33,7 @@ function Login() {
         const userData = database.find((user) => user.username === username && user.password === password);
         if (userData) {
             setIsSubmitted(true);
-            navigate('/Home')
+            navigate('/')
         } else {
             // not found
             setIsSubmitted(false);
