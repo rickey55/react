@@ -9,8 +9,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/react" element={<Login />} />
-        <Route path="/react/Home" element={<Home />} />
+        <Route exact path="/react/Login" element={<Login />} />
+        <Route path="/react" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
