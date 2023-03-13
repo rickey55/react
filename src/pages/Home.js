@@ -2,6 +2,7 @@ import "../css/all.min.css";
 import "../css/sb-admin-2.css";
 import React from 'react';
 
+
 const Home = () => {
     return (
         <div >
