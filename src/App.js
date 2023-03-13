@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/react" element={<Login />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/react/Home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
