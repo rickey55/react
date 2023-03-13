@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Login />} />
+        <Route exact path="/react" element={<Login />} />
         <Route path="/Home" element={<Home />} />
       </Routes>
     </BrowserRouter>
