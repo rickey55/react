@@ -15,10 +15,7 @@ function App() {
         <Route exact path="/Redux" element={<Redux />} />
         <Route exact path="/" element={<Login />} />
         <Route path="/Home" element={<Home />} />
-<<<<<<< HEAD
-        <Route path="/Test" element={<Test />} />
-=======
->>>>>>> 43a06a847a1db0eb15ab8cde107d4de78059429c
+         <Route path="/Test" element={<Test />} />
       </Routes>
     </BrowserRouter>
   );
