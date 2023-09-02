@@ -15,7 +15,6 @@ function App() {
         <Route exact path="/Redux" element={<Redux />} />
         <Route exact path="/" element={<Login />} />
         <Route path="/Home" element={<Home />} />
- 
          <Route path="/Test" element={<Test />} />
        </Routes>
     </BrowserRouter>

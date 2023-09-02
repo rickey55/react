@@ -2,6 +2,7 @@ import "../css/all.min.css";
 import "../css/sb-admin-2.css";
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Test from "./Test";
 
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
 
                     {/* <!-- Nav Item - Dashboard --> */}
                     <li className="nav-item active">
-                        <a className="nav-link" href="index.html">
+                        <a className="nav-link" href="/test">
                             <i className="fas fa-fw fa-tachometer-alt"></i>
                             <span>Dashboard</span></a>
                     </li>
